@@ -16,11 +16,11 @@ function formatTime(ms) {
 }
 
 startBtn.addEventListener('click', () => {
-  if (interval) return; // لا تبدأ مرتين
+  if (interval) return;
   startTime = Date.now() - elapsed;
   interval = setInterval(() => {
     elapsed = Date.now() - startTime;
-    display.value = formatTime(elapsed);
+    display.textContent = formatTime(elapsed);
   }, 10);
 });
 
