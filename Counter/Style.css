@@ -2,6 +2,9 @@ body {
   background-color: #010101;
   color: #fbfaff;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+  }
 .value {
   position: absolute;
   top: 18%;
